@@ -1,0 +1,4 @@
+
+Enemy = (function() {
+
+})();
