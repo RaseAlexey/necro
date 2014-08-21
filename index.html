@@ -22,10 +22,19 @@
   <body>
       <div class="container">
           <div class="tab fitting_room">
-                <button onclick="start_battle()">Битва</button>
+                <div class="row">
+                    <div class="subtab inventory col-md-6"></div>
+                    <div class="subtab body col-md-6"></div>
+                    <button class="navigation_button col-sm-12" onclick="start_battle()">Битва</button>
+                </div>
+
+                
           </div>
           <div class="tab battle">
-                <button onclick="open_fitting_room()">Фиттилка</button>
+                <div class="row">
+                    <div class="col-lg-12 subtab battlefield"></div>
+                    <button class="navigation_button col-sm-12" onclick="open_fitting_room()">Фиттилка</button>
+                </div>
           </div>
       </div>
 

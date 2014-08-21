@@ -1,72 +1,22 @@
-div {
-	overflow-x: hidden;
-	text-overflow: ellipsis;
-}
-
-body, html {
+.container, html, body, .tab {
 	height: 100%;
 }
-
-body {
+.tab {
+	padding-bottom: 2em;
+}
+.navigation_button {
+	height: 2em;
+	bottom: 0;
+}
+.subtab, .row {
 	height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.container-fluid {
-	height: 100%;
-}
-
-.row {
-	height: 100%;
-}
-.left{	
-	padding-bottom: 150px;
-}
-.left, .right {
-	height: 100%;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-
-	.hotkeys {
-		display:none;
-	}
-	.container-fluid, .row, .left, .right, .info, .inventory, .stats {
-		height: auto;
-	}
-}
-
-.chat {
-	height: 150px;
-	overflow-y: auto;
-	background-color: grey;
-}
-
-.content {
-	overflow-y: auto;
-	height:100%;
-	background-color: blue;
 }
 .inventory {
-	overflow-y: auto;
-	background-color: yellow;
-	height:100%;
+	background-color: #ECDDAB;
 }
-.info {
-	height: 100%;
+.body {
+	background-color: #E0ECAB;
 }
-
-.stats{	
-	height: 60%;
-	overflow-y: auto;
-	background-color: green;
-}
-.hotkeys {
-	height: 40%;
-	overflow-y: auto;
-	background-color: purple;
+.battlefield {
+	background-color: #ECC5AB;
 }
