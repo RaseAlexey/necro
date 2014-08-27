@@ -11,12 +11,21 @@
 .subtab, .row {
 	height: 100%;
 }
+.subtab {
+	padding-top: 0.5em;
+}
 .inventory {
 	background-color: #ECDDAB;
 }
-.body {
+.homunculus {
 	background-color: #E0ECAB;
 }
-.battlefield {
+.player {
+	background-color: #E0ECAB;
+}
+.enemy {
 	background-color: #ECC5AB;
+}
+.title {
+	opacity: 0.5;
 }

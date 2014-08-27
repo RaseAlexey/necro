@@ -23,14 +23,23 @@
       <div class="container">
           <div class="tab fitting_room">
                 <div class="row">
-                    <div class="subtab inventory col-md-6"></div>
-                    <div class="subtab body col-md-6"></div>
+                    <div class="subtab inventory col-md-6">
+                        <span class="title">Инвентарь</span>
+                    </div>
+                    <div class="subtab homunculus col-md-6">
+                        <span class="title">Гомункул</span>
+                    </div>
                     <button class="navigation_button col-sm-12" onclick="start_battle()">Битва</button>
                 </div>                
           </div>
           <div class="tab battle">
                 <div class="row">
-                    <div class="col-lg-12 subtab battlefield"></div>
+                    <div class="col-lg-6 subtab player">
+                        <span class="title">Ваш гомункул</span>
+                    </div>
+                    <div class="col-lg-6 subtab enemy">
+                        <span class="title">Вражеский гомункул</span>
+                    </div>
                     <button class="navigation_button col-sm-12" onclick="open_fitting_room()">Фиттилка</button>
                 </div>
           </div>
