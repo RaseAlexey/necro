@@ -1,6 +1,6 @@
-player = (function(inventory){
+player = (function(homunculus, inventory){
+	var homunculus = homunculus;
 	var inventory = inventory;
-	var homunculus = {};
 	return {
 		getInventory: function() {
 			return inventory;
@@ -10,6 +10,12 @@ player = (function(inventory){
 		},
 		getHomunculus: function() {
 			return homunculus;
+		},
+		getCode: function() {
+			var code = '<div class="player-code">' +
+			this.getHomunculus().getCode() + 
+			'</div>';
+			return code;
 		}
 	};
-})(inventory);
+})(new Homunculus(test),inventory);   

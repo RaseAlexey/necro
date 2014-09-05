@@ -1,7 +1,11 @@
-function Module(hp) {
+function Module(name, hp) {
+    var name = name;
     var maxhp = hp;
     var hp = hp;
     return {
+        getName: function() {
+            return name
+        },
         getMaxHp: function() {
             return maxhp;
         },
@@ -16,6 +20,23 @@ function Module(hp) {
         },
         setHp: function(new_hp) {
             return hp = new_hp;
+        },
+        getCode: function() {
+            return '<div class="item-code">'+this.name + " " + this.getHp() + "/" + this.getMaxHp()+'</div>'
         }
     }
 };
+
+
+function put_module(array, module) {
+	var tmp = true;
+	console.log(array)
+	array.forEach(function(element, index) {
+		console.log(index, element, tmp);
+		if (element == undefined && tmp) {
+			array[index] = module;
+			console.log('put module '+module+' in '+index+' slot')
+			tmp = false;
+		} 
+	})
+}

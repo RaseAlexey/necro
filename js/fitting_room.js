@@ -1,10 +1,12 @@
 fitting_room = (function(){
 	return {
-		drawHomunculus: function() {
-
+		open: function() {
+			$('.battle').hide();
+			this.draw();
+			$('.fitting_room').show();
 		},
-		drawInventory: function() {
-			
+		draw: function() {
+			$(".homunculus").html(player_title + player.getCode());
 		}
 	}
 })()

@@ -15,10 +15,10 @@
 	padding-top: 0.5em;
 }
 .inventory {
-	background-color: #ECDDAB;
+	background-color: #E2E8C3;
 }
 .homunculus {
-	background-color: #E0ECAB;
+	background-color: #C3E8DC;
 }
 .player {
 	background-color: #E0ECAB;
@@ -28,4 +28,8 @@
 }
 .title {
 	opacity: 0.5;
+}
+.item-code {
+	background-color: #D0D6C7;
+	border: 1px solid black;
 }
